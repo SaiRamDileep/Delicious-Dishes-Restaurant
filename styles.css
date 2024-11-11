@@ -1,0 +1,290 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e55340;
+}
+
+/* Featured Dishes Section */
+.featured-dishes {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-dishes h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.dish-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dish {
+    width: 30%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.dish img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.dish h3 {
+    font-size: 1.5rem;
+    color: #ff6347;
+}
+
+.dish p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Menu Page Styles */
+.menu-section {
+    padding: 2rem;
+    background-color: #f2f2f2;
+    margin: 1rem 0;
+}
+
+.menu-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.menu-section ul {
+    list-style-type: none;
+}
+
+.menu-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* About Page Styles */
+.about {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #333;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Page Styles */
+.contact {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact input[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #e55340;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .dish-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 80%;
+    }
+}

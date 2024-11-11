@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Delicious Dishes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicious Dishes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to make a reservation, feel free to reach out to us.</p>
+
+        <h3>Contact Information</h3>
+        <p>Email: info@deliciousdishes.com</p>
+        <p>Phone: +1 555-123-4567</p>
+        <p>Address: 123 Food St., Flavor Town</p>
+
+        <h3>Send Us a Message</h3>
+        <form action="index.html" id="contactForm" onsubmit="validateForm(event)">
+            <label for="name">Your Name</label><br>
+            <input type="text" id="name" name="name" ><br><br>
+
+            <label for="email">Your Email</label><br>
+            <input type="email" id="email" name="email" ><br><br>
+
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" rows="5" ></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Dishes</p>
+    </footer>
+    <script src="./javascript.js"></script>
+</body>
+</html>
